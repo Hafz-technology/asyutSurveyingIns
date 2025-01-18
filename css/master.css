@@ -66,10 +66,6 @@ ul {
 .sidebar {
     width: 250px;
     box-shadow: 0 0 10px #DDD;
-    max-height: 100vh; 
-    overflow-y: auto;
-    position: sticky;
-    overflow: scroll;
 
 }
 
@@ -351,14 +347,66 @@ table td {
 
 }
 
-
-
 .tab {
-    overflow-x: scroll;
-    width: fit-content;
-    font-size: 10px;
-    width: 200px;
+    font-size: 8px;
 }
+
+
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    max-height: 50px;
+    align-items: center;
+}
+
+
+.footer-title {
+    font-size: 1.3em ;
+    font-weight: 600;
+
+}
+.footer-title span {
+    color: #ff0000;
+}
+
+.footer .social-icons a{ 
+    font-size: 1.3em;
+    padding: 0 12px 0 0 ;
+}
+
+
+.footer .social-icons a:hover {
+    color: var(--blue-color);
+}
+@media (max-width: 767px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-height: fit-content;
+    }
+}
+
+
+#up {
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 40px;
+    left: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
 
 
 
